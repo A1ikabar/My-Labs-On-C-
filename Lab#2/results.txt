@@ -1,0 +1,12 @@
+Session #1 qwer
+a=2, b=3, stepen=8
+------------------------
+Session #2 qwert
+a=2, b=3, stepen=8
+------------------------
+Session #3 qwerty
+a=2, b=3, stepen=8
+------------------------
+Session #4 htdt
+a=3, b=4, stepen=81
+------------------------
