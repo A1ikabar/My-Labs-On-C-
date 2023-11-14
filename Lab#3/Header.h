@@ -1,16 +1,18 @@
 #pragma once
 
-#include <iostream>
-#include <cctype>
-#include <cstring>
-#include <cstdlib>
-#include <fstream>
+#ifndef HEADER_H
+#define HEADER_H
+
 #include <string>
 
-using namespace std;
+struct Magazine {
+    std::string name;
+    double price;
+    int pages;
+    int in_stock;
 
-//void displayBySearch(string name);
-void enter(), init_list(), display();
-void /*update(),*/ input(int i);
-int menu();
-const int SIZE = 100;
+    void input();  // input method
+    void display();  // output method
+};
+
+#endif
