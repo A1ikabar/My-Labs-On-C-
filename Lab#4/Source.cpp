@@ -2,6 +2,89 @@
 
 using namespace std;
 
+string Magazine::Get_name()
+{
+	return name;
+}
+int Magazine::Get_pages()
+{
+	return pages;
+}
+int Magazine::Get_cost()
+{
+	return cost;
+}
+int Magazine::Get_in_stock()
+{
+	return in_stock;
+}
+
+void Magazine::Set_name(string nameS)
+{
+	name = nameS;
+}
+void Magazine::Set_pages(int pageS)
+{
+	pages = pageS;
+}
+void Magazine::Set_cost(int costS)
+{
+	cost = costS;
+}
+void Magazine::Set_in_stock(int in_stockS)
+{
+	in_stock = in_stockS;
+}
+
+Magazine::Magazine()
+{
+	name = "";
+	pages = 0;
+	cost = 0;
+	in_stock = 0;
+}
+// Конструктор с параметрами
+Magazine::Magazine(string nameP, int pageP, double costP, int in_stockP)//, int numberP, int markP)
+{
+	name = nameP;
+	pages = pageP;
+	cost = costP;
+	in_stock = in_stockP;
+}
+
+
+
+void Magazine::ChangeName()
+{
+	string Name_1;
+	std::cout << "Введите название журнала: ";
+	cin >> Name_1;
+	name = Name_1;
+}
+
+void Magazine::ChangePages()
+{
+	int pages_1;
+	std::cout << "Введите количество страниц: ";
+	cin >> pages_1;
+	pages = pages_1;
+}
+
+void Magazine::ChangeCost()
+{
+	double cost_1;
+	std::cout << "Введите цену: ";
+	cin >> cost_1;
+	cost = cost_1;
+}
+void Magazine::ChangeIn_stock()
+{
+	int in_stock_1;
+	std::cout << "Введите количество на складе: ";
+	cin >> in_stock_1;
+	in_stock = in_stock_1;
+}
+
 void ReadingFile(Magazine* magazine, string InsuranceMagazine)
 
 {
