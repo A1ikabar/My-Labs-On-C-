@@ -12,94 +12,37 @@ class Magazine
 	double cost;
 	int in_stock;
 public:
-	string Get_name()
-	{
-		return name;
-	}
-	int Get_pages()
-	{
-		return pages;
-	}
-	int Get_cost()
-	{
-		return cost;
-	}
-	int Get_in_stock()
-	{
-		return in_stock;
-	}
+	string Get_name();
 
-	void Set_name(string nameS)
-	{
-		name = nameS;
-	}
+	int Get_pages();
 
-	void Set_pages(int pageS)
-	{
-		pages = pageS;
-	}
+	int Get_cost();
 
-	void Set_cost(int costS)
-	{
-		cost = costS;
-	}
-	void Set_in_stock(int in_stockS)
-	{
-		in_stock = in_stockS;
-	}
-public:
+	int Get_in_stock();
+
+	void Set_name(string nameS);
+
+	void Set_pages(int pageS);
+
+	void Set_cost(int costS);
+
+	void Set_in_stock(int in_stockS);
+
 	// Конструктор по умолчанию
-	Magazine()
-	{
-		name = "";
-		pages = 0;
-		cost = 0;
-		in_stock = 0;
-	}
+	Magazine();
+
 	// Конструктор с параметрами
-	Magazine(string nameP, int pageP, double costP, int in_stockP)//, int numberP, int markP)
-	{
-		name = nameP;
-		pages = pageP;
-		cost = costP;
-		in_stock = in_stockP;
-	}
+	Magazine(string nameP, int pageP, double costP, int in_stockP);
 
-	// Деструктор
-	~Magazine()
-	{
 
-	}
-	void ChangeName()
-	{
-		string Name_1;
-		std::cout << "Введите название журнала: ";
-		cin >> Name_1;
-		name = Name_1;
-	}
 
-	void ChangePages()
-	{
-		int pages_1;
-		std::cout << "Введите количество страниц: ";
-		cin >> pages_1;
-		pages = pages_1;
-	}
+	void ChangeName();
 
-	void ChangeCost()
-	{
-		double cost_1;
-		std::cout << "Введите цену: ";
-		cin >> cost_1;
-		cost = cost_1;
-	}
-	void ChangeIn_stock()
-	{
-		int in_stock_1;
-		std::cout << "Введите количество на складе: ";
-		cin >> in_stock_1;
-		in_stock = in_stock_1;
-	}
+	void ChangePages();
+
+	void ChangeCost();
+
+	void ChangeIn_stock();
 };
 
 void ClearFile();
@@ -118,5 +61,5 @@ int ConvertStringToInt(string str);
 
 string ConvertFileString(string str);
 
-void NewObject(Magazine * *magazine); 
+void NewObject(Magazine** magazine);
 #pragma once
